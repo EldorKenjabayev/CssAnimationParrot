@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.conteiner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16223E;
+    position: relative;
+}
+
+.conteiner .bird {
+    width: 300px;
+    height: 300px;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+.conteiner .bird .red_conteiner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    animation: redAnim 3s ease-in-out infinite;
+}
+
+.conteiner .bird .red_conteiner .red {
+    width: 50%;
+    height: 100%;
+    background-color: #B92F1F;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 150px 150px 0;
+}
+
+.conteiner .bird .face {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    border: 1px solid transparent;
+    top: 15%;
+    left: 15%;
+}
+
+.conteiner .bird .face .white_conteiner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1100;
+    animation: whiteAnim 3s ease-in-out infinite; 
+    /* background-color: #fff; */
+}
+
+.conteiner .bird .face .white_conteiner .white {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 110px 110px 0;
+}
+.conteiner .bird .face .orange_conteiner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: orangeAnim 3s ease-in-out infinite;
+    z-index: 1200;
+}
+
+.conteiner .bird .face .orange_conteiner .orange{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(242, 255, 0);
+    top: 0;
+    right: 0;
+    border-top-left-radius: 110px;
+}
+
+.conteiner .bird .face .yellow_conteiner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: yellovAnim 3s ease-in-out infinite;
+    z-index:0;
+}
+
+.conteiner .bird .face .yellow_conteiner .yellow{
+    width: 25%;
+    height: 25%;
+    background-color: orange;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    border-bottom-left-radius: 110px;
+
+}
+
+.conteiner .bird .face .shadow_conteiner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1200;
+    animation: shadowAnim 3s ease-in-out infinite;
+}
+
+.conteiner .bird .face .shadow_conteiner .shadow{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 110px;
+    background-color: #ccc;
+}
+
+.conteiner .bird .face .black_conteiner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 1190;
+    animation: blackAnim 3s ease-in-out infinite;
+    
+}
+
+.conteiner .bird .face .black{
+    width: 25%;
+    height: 25%;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    right: 25%;
+
+}
